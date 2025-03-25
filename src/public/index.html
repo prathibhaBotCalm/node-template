@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Certix API Server</title>
+    <style>
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      .container {
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 30px;
+        margin-top: 30px;
+        background-color: #fff;
+      }
+      h1 {
+        color: #2c3e50;
+        border-bottom: 2px solid #3498db;
+        padding-bottom: 10px;
+      }
+      .status {
+        display: inline-block;
+        background-color: #2ecc71;
+        color: white;
+        padding: 8px 16px;
+        border-radius: 20px;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+      code {
+        background-color: #f8f9fa;
+        border: 1px solid #e9ecef;
+        border-radius: 4px;
+        padding: 2px 5px;
+        font-family: 'Courier New', Courier, monospace;
+      }
+      .endpoint {
+        background-color: #f8f9fa;
+        border-left: 4px solid #3498db;
+        padding: 15px;
+        margin: 15px 0;
+      }
+      footer {
+        margin-top: 30px;
+        text-align: center;
+        color: #7f8c8d;
+        font-size: 0.9em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Certix API Server</h1>
+      <div class="status">Server is running</div>
+
+      <h2>API Documentation</h2>
+      <p>Welcome to the API server. Below are the available endpoints:</p>
+
+      <div class="endpoint">
+        <h3>Base URL: <code>/api</code></h3>
+        <p>All API endpoints are prefixed with <code>/api</code></p>
+      </div>
+
+      <h3>API Health Check</h3>
+      <div class="endpoint">
+        <p><strong>GET</strong> <code>/api/health</code></p>
+        <p>Check if the API and database are running correctly.</p>
+      </div>
+
+      <h3>Authentication</h3>
+      <div class="endpoint">
+        <p><strong>POST</strong> <code>/api/auth/login</code></p>
+        <p>Authenticate a user and receive a JWT token.</p>
+      </div>
+
+      <h3>Example Endpoints</h3>
+      <div class="endpoint">
+        <p><strong>GET</strong> <code>/api/users</code></p>
+        <p>Retrieve a list of users.</p>
+      </div>
+
+      <div class="endpoint">
+        <p><strong>GET</strong> <code>/api/users/:id</code></p>
+        <p>Retrieve a specific user by ID.</p>
+      </div>
+
+      <p>
+        For detailed API documentation, please refer to the API documentation.
+      </p>
+    </div>
+
+    <footer>
+      <p>© 2025 - Certix API</p>
+    </footer>
+  </body>
+</html>
